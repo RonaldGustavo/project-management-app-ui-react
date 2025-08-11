@@ -1,11 +1,15 @@
 @import './components/header.css';
+@import './components/highlight.css';
 @import './components/channel.css';
+@import './components/project.css';
+@import './components/news.css';
 
 .container {
-
+    padding: 15px;
 }
 
-.container-highlight-channel {
+.container-grid-2-column {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }

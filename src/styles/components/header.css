@@ -10,9 +10,11 @@
 .header-mid {
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
 
 .header-right {
     display: flex;
     flex-direction: row;
+    gap:5px
 }

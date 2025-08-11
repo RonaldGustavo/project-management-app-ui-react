@@ -1,0 +1,39 @@
+.channel {
+
+}
+
+.channel-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-header-title {
+
+}
+
+.channel-header-create-channel {
+
+}
+
+.channel-body-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-body-card-title-container {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+}
+
+.channel-body-card-icon {
+
+}
+
+.channel-body-card-title {
+
+}
+
+.channel-body-card-notif {
+
+}
