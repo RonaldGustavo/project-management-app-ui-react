@@ -1,0 +1,11 @@
+@import './components/header.css';
+@import './components/channel.css';
+
+.container {
+
+}
+
+.container-highlight-channel {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
