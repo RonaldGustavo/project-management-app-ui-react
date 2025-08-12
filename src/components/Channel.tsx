@@ -1,24 +1,27 @@
+import { CiSearch } from "react-icons/ci";
+import { MdGroup } from "react-icons/md";
+
 const Channel = () => {
   const dataChannel = [
     {
-      icon: 'icon',
-      title: 'team engineer',
-      notif: '2',
+      title: "team engineer",
+      notif: "2",
     },
     {
-      icon: 'icon',
-      title: 'team product',
-      notif: '',
+      title: "team product",
+      notif: "",
     },
     {
-      icon: 'icon',
-      title: 'team quality',
-      notif: '2',
+      title: "team quality",
+      notif: "2",
     },
     {
-      icon: 'icon',
-      title: 'team testing',
-      notif: '0',
+      title: "team testing",
+      notif: "0",
+    },
+    {
+      title: "team technical",
+      notif: "0",
     },
   ];
 
@@ -27,21 +30,28 @@ const Channel = () => {
       <div className="channel">
         <div className="channel-header">
           <p className="channel-header-title">Chat Channels</p>
-          <p className="channel-header-create-channel">+Create new channel</p>
+          <p className="channel-header-create-channel">+ Create new channel</p>
         </div>
-        <input />
-        {dataChannel &&
-          dataChannel.map((data: any) => {
-            return (
-              <div className="channel-body-card">
-                <div className="channel-body-card-title-container">
-                  <p className="channel-body-card-icon">{data.icon}</p>
-                  <p className="channel-body-card-title">{data.title}</p>
-                </div>
-                <p className="channel-body-card-notif">{data.notif}</p>
+
+        <div className="channel-search-container">
+          <CiSearch className="channel-search-icon" size={20} />
+          <input
+            placeholder="Search channel, messages, etc."
+            className="channel-search-input"
+          />
+        </div>
+
+        <div className="channel-list">
+          {dataChannel.map((data: any) => (
+            <div className="channel-body-card" key={data.title}>
+              <div className="channel-body-card-title-container">
+                <MdGroup className="channel-body-card-icon" size={32} />
+                <p className="channel-body-card-title">{data.title}</p>
               </div>
-            );
-          })}
+              <p className="channel-body-card-notif">{data.notif}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
