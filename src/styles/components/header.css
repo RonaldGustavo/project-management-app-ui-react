@@ -1,3 +1,4 @@
+/* ===== BASE HEADER ===== */
 .header {
   width: 100%;
   min-height: 70px;
@@ -6,8 +7,11 @@
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
 }
 
+/* ===== LEFT SECTION ===== */
 .header-left {
   display: flex;
   align-items: center;
@@ -17,11 +21,13 @@
   fill: white;
 }
 
+/* ===== MIDDLE SECTION ===== */
 .header-mid {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .header-search-container {
@@ -31,6 +37,8 @@
   border-radius: 15px;
   padding: 7px 10px;
   background-color: rgb(37, 36, 36);
+  flex: 1; /*fleksibel di mobile */
+  min-width: 180px;
 }
 
 .header-search-icon {
@@ -38,7 +46,8 @@
 }
 
 .header-search-input {
-  width: 300px;
+  width: 100%;
+  min-width: 100px;
   padding: 5px;
   border: none;
   outline: none;
@@ -51,47 +60,88 @@
   fill: #5f37ff;
 }
 
-.header-button-invite {
-  padding: 12px;
-  background-color: #504773;
+/* Buttons */
+.header-button-invite,
+.header-button-share {
+  padding: 10px 14px;
   border: none;
   border-radius: 15px;
+  font-size: 14px;
+  white-space: nowrap; /*teks ga turun */
+}
+
+.header-button-invite {
+  background-color: #504773;
   color: #faefd4;
 }
 
 .header-button-share {
-  padding: 12px;
   background-color: #fc8625;
-  border: none;
-  border-radius: 15px;
   color: #faefd4;
 }
 
+/* ===== RIGHT SECTION ===== */
 .header-right {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .divider {
   width: 1px;
-  height: 24px; 
+  height: 24px;
   background-color: #ccc;
 }
 
-.header-notif-icon {
-  fill: white;
-}
-
-.header-profile-icon {
-  fill: white;
-}
-
+.header-notif-icon,
+.header-profile-icon,
 .header-menu-icon {
   fill: white;
 }
 
 .header-text-menu {
-    color: white;
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .header-mid {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header-search-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-mid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-button-invite,
+  .header-button-share {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-right {
+    justify-content: center;
+  }
 }
