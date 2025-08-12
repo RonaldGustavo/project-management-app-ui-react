@@ -1,8 +1,8 @@
-@import './components/header.css';
-@import './components/highlight.css';
-@import './components/channel.css';
-@import './components/project.css';
-@import './components/news.css';
+@import "./components/header.css";
+@import "./components/highlight.css";
+@import "./components/channel.css";
+@import "./components/project.css";
+@import "./components/news.css";
 
 * {
   margin: 0;
@@ -12,18 +12,18 @@
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #000000, #2e003e);
-    /* background-color: white; */
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, #2e003e);
+  /* background-color: white; */
 }
 
 .container-wrapper {
-    padding: 15px;
+  padding: 15px;
 }
 
 .container-grid-2-column {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
