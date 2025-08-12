@@ -7,13 +7,13 @@ const Highlight = () => {
     {
       title: "Edit your Taskboard",
       description:
-        "Transform your environment to enhance productivity and creativity customize layout.",
+        "Elevate your space to inspire innovation and collaboration while tailoring every detail to match your unique vision.",
     },
 
     {
       title: "Edit your Workspace",
       description:
-        "Transform your environment to enhance productivity and creativity customize layout.",
+        "Optimize your workflow to achieve maximum efficiency and satisfaction while maintaining balance and clarity in your daily routine.",
     },
   ];
 

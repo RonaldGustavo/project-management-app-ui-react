@@ -55,12 +55,13 @@
 .highlight-left-card-title {
   color: white;
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .highlight-left-card-desc {
-  color: rgb(179, 178, 178);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+  opacity: 0.8;
 }
 
 /* tombol ditaruh di bawah wrapper */
@@ -68,8 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-top: auto; /* push ke bawah */
+  padding: 8px 10px; /* padding lebih kecil biar rapat */
 }
 
 .highlight-left-card-button {
@@ -129,6 +129,7 @@
 .highlight-mid-card-header-text-subTitle {
   margin-bottom: 5px;
   color: rgb(179, 178, 178);
+  opacity: 0.8;
 }
 
 .highlight-mid-card-container-percentage {
@@ -143,6 +144,7 @@
 
 .highlight-mid-card-text-dayLeft {
   color: rgb(179, 178, 178);
+  opacity: 0.8;
 }
 
 .highlight-mid-card-bar-percentage {
@@ -188,6 +190,7 @@
 
 .highlight-mid-card-footer-startDate {
   color: rgb(179, 178, 178);
+  opacity: 0.8;
 }
 
 /* ===== Bagian Kanan ===== */
@@ -229,7 +232,8 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
 
   flex: 1; /* bagi tinggi kolom sama rata antar item */
   min-height: 0;
@@ -242,6 +246,7 @@
 
 .highlight-right-card-body-text-date {
   color: rgba(255, 255, 255, 0.6);
+  opacity: 0.8;
 }
 
 .highlight-left-wrapper,
