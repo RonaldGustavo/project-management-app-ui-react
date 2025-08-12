@@ -1,50 +1,83 @@
 /* ===== Container utama ===== */
 .highlight {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  /* background-color: red; */
+}
+
+.header-divider {
+  margin-bottom: 15px;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
 }
 
 /* ===== Bagian Kiri ===== */
 .highlight-left {
+}
 
+.highlight-left-wrapper {
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.highlight-divider {
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
 }
 
 .highlight-left-title {
-    
+  color: white;
+  font-size: 24px;
 }
 
 .highlight-left-card {
-
+    margin-bottom: 20px;
 }
 
 .highlight-left-card-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .highlight-left-card-desc {
+        color: rgb(179, 178, 178);
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .highlight-left-card-button-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .highlight-left-card-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #4b0082;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
 }
 
 /* ===== Bagian Tengah ===== */
 .highlight-mid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .highlight-mid-card {
 }
 
 .highlight-mid-card-container-header {
-    display: flex;
-    justify-content: start;
-    gap: 5px;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
 }
 
 .highlight-mid-card-header-logo {
@@ -60,8 +93,8 @@
 }
 
 .highlight-mid-card-container-percentage {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .highlight-mid-card-text-percentage {
@@ -74,17 +107,17 @@
 }
 
 .highlight-mid-card-container-footer {
-        display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .highlight-mid-card-footer-iconProfile {
 }
 
 .highlight-mid-card-footer-container-right {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
 }
 
 .highlight-mid-card-footer-iconDelete {
@@ -95,13 +128,13 @@
 
 /* ===== Bagian Kanan ===== */
 .highlight-right {
-        display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .highlight-right-card-header {
-        display: flex;
-        justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .highlight-right-card-header-text-title {

@@ -4,14 +4,12 @@ const Highlight = () => {
       title: 'Edit your Taskboard',
       description:
         'Transform your environment to enhance productivity and creativity customize layout.',
-      button: 'Getting Started',
     },
 
     {
       title: 'Edit your Workspace',
       description:
         'Transform your environment to enhance productivity and creativity customize layout.',
-      button: 'Getting Started',
     },
   ];
 
@@ -52,20 +50,24 @@ const Highlight = () => {
       <div className="highlight">
         <div className="highlight-left">
           <h2 className="highlight-left-title">Welcome to Ronald Board!</h2>
+          <div className="highlight-left-wrapper">
+            
           {dataLeft &&
             dataLeft.map((data: any) => {
               return (
                 <div className="highlight-left-card">
                   <p className="highlight-left-card-title">{data.title}</p>
                   <p className="highlight-left-card-desc">{data.description}</p>
-                  <div className="highlight-left-card-button-container">
-                    <button className="highlight-left-card-button">
-                      {data.button}
-                    </button>
-                  </div>
                 </div>
               );
             })}
+          <hr className="highlight-divider"/>
+          <div className="highlight-left-card-button-container">
+            <button className="highlight-left-card-button">
+              Getting Started
+            </button>
+          </div>
+          </div>
         </div>
         <div className="highlight-mid">
           {dataMid &&

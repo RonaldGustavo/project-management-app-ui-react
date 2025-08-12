@@ -8,14 +8,16 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header />
-        <div className="container-grid-2-column">
-          <Highlight />
-          <Channel />
-        </div>
-        <div className="container-grid-2-column">
-          <Project />
-          <News />
+        <div className='container-wrapper'>
+          <Header />
+          <div className="container-grid-2-column">
+            <Highlight />
+            <Channel />
+          </div>
+          <div className="container-grid-2-column">
+            <Project />
+            <News />
+          </div>
         </div>
       </div>
     </>

@@ -4,12 +4,16 @@
 
 /* ===== Header ===== */
 .project-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .project-header-text-title {
 }
 
 .project-header-right {
+    display: flex;
+    gap:5px;
 }
 
 .project-header-right-icon {

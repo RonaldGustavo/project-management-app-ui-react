@@ -1,35 +1,30 @@
 .news {
-  /* container utama */
 }
 
 .news-title {
-  /* judul berita */
 }
 
 .news-desc {
-  /* deskripsi berita */
 }
 
 .news-image {
-  /* gambar berita */
 }
 
 .news-footer {
-  /* area footer */
+    display: flex;
+    justify-content: space-between;
 }
 
 .news-footer-page {
-  /* teks halaman di footer */
 }
 
 .news-footer-button-container {
-  /* pembungkus tombol di footer */
+    display: flex;
+    gap: 5px;
 }
 
 .news-footer-button-skip {
-  /* tombol skip */
 }
 
 .news-footer-button-continue {
-  /* tombol continue */
 }

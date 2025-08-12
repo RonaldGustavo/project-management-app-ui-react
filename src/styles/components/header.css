@@ -1,20 +1,97 @@
 .header {
- display: flex;
- justify-content: space-between;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .header-left {
+  display: flex;
+  align-items: center;
+}
 
+.header-icon {
+  fill: white;
 }
 
 .header-mid {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  padding: 7px 10px;
+  background-color: rgb(37, 36, 36);
+}
+
+.header-search-icon {
+  fill: gray;
+}
+
+.header-search-input {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.header-mic-icon {
+  fill: #5f37ff;
+}
+
+.header-button-invite {
+  padding: 12px;
+  background-color: #504773;
+  border: none;
+  border-radius: 15px;
+  color: #faefd4;
+}
+
+.header-button-share {
+  padding: 12px;
+  background-color: #fc8625;
+  border: none;
+  border-radius: 15px;
+  color: #faefd4;
 }
 
 .header-right {
-    display: flex;
-    flex-direction: row;
-    gap:5px
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.divider {
+  width: 1px;
+  height: 24px; 
+  background-color: #ccc;
+}
+
+.header-notif-icon {
+  fill: white;
+}
+
+.header-profile-icon {
+  fill: white;
+}
+
+.header-menu-icon {
+  fill: white;
+}
+
+.header-text-menu {
+    color: white;
 }
