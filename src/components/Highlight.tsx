@@ -49,10 +49,6 @@ const Highlight = () => {
       title: "Scoping Meeting",
       date: "03.00 - 04.00 pm",
     },
-    {
-      title: "Handover Meeting",
-      date: "12.00 - 13.00 pm",
-    },
   ];
 
   return (
@@ -107,9 +103,12 @@ const Highlight = () => {
                       {data.dayLeft} days left
                     </p>
                   </div>
-                  <p className="highlight-mid-card-bar-percentage">
-                    {data.percentage}
-                  </p>
+                  <div className="highlight-mid-card-bar-percentage">
+                    <div
+                      className="bar-fill"
+                      style={{ width: `${data.percentage}%` }}
+                    ></div>
+                  </div>
                   <div className="highlight-mid-card-container-footer">
                     <img
                       src={userImg}
