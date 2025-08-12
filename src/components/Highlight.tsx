@@ -40,14 +40,17 @@ const Highlight = () => {
     {
       title: "Grooming Meeting",
       date: "01.00 - 02.00 pm",
+      color: "blue",
     },
     {
       title: "Technical Meeting",
       date: "09.00 - 10.00 pm",
+      color: "green",
     },
     {
       title: "Scoping Meeting",
       date: "03.00 - 04.00 pm",
+      color: "orange",
     },
   ];
 
@@ -139,7 +142,7 @@ const Highlight = () => {
           {dataRight &&
             dataRight.map((data: any) => {
               return (
-                <div className="highlight-right-card-body">
+                <div className={`highlight-right-card-body card-${data.color}`}>
                   <p className="highlight-right-card-body-text-title">
                     {data.title}
                   </p>

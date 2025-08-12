@@ -254,3 +254,15 @@
 .highlight-right {
   overflow: auto;
 }
+
+.card-green {
+  background: rgba(40, 167, 69, 0.3); /* hijau soft */
+}
+
+.card-blue {
+  background: rgba(0, 123, 255, 0.3); /* biru soft */
+}
+
+.card-orange {
+  background: rgba(255, 152, 0, 0.3); /* oranye soft */
+}
