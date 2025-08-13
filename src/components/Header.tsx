@@ -1,16 +1,16 @@
 import { CiMicrophoneOn, CiSearch } from 'react-icons/ci';
-import { MdOutlineLaptopChromebook } from 'react-icons/md';
 import { IoIosNotifications } from 'react-icons/io';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaLink, FaPlus, FaUserCircle } from 'react-icons/fa';
 import { AiOutlineAppstoreAdd } from 'react-icons/ai';
 import { userImg } from '../assets/images';
+import { SiJira } from 'react-icons/si';
 
 const Header = () => {
   return (
     <>
       <div className="header">
         <div className="header-left">
-          <MdOutlineLaptopChromebook className="header-icon" size={42} />
+          <SiJira className="header-icon" size={42} />
         </div>
         <div className="header-mid">
           <div className="header-search-container">
@@ -22,8 +22,15 @@ const Header = () => {
           </div>
           <CiMicrophoneOn className="header-mic-icon" size={32} />
           <img src={userImg} width={100} />
-          <button className="header-button-invite">Invite Teammate</button>
-          <button className="header-button-share">Share This Workspace</button>
+          <button className="header-button-invite">
+            <FaPlus className="icon" />
+            Invite Teammate
+          </button>
+          <button className="header-button-share">
+            <FaLink className="icon" />
+            Share This Workspace
+          </button>
+          =
         </div>
         <div className="header-right">
           <IoIosNotifications className="header-notif-icon" size={32} />
@@ -33,7 +40,7 @@ const Header = () => {
           <p className="header-text-menu">Menu</p>
         </div>
       </div>
-      <hr className='header-divider'/>
+      <hr className="header-divider" />
     </>
   );
 };

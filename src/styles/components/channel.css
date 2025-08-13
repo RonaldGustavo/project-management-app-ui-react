@@ -16,7 +16,7 @@
 
 .channel-header-title {
   color: white;
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .channel-body-card-icon {
-  fill: white;
+  fill: brown;
 }
 
 .channel-body-card-title {

@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -26,4 +26,5 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
+  margin-top: 20px;
 }

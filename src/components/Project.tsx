@@ -1,3 +1,6 @@
+import { CiSearch } from 'react-icons/ci';
+import { FaCaretDown } from 'react-icons/fa';
+
 const Project = () => {
   const data = [
     {
@@ -34,12 +37,21 @@ const Project = () => {
     <>
       <div className="project">
         <div className="project-header">
-          <h2 className="project-header-text-title">Recent Projects</h2>
+          <div className='project-header-left'>
+            <h2 className="project-header-text-title">Recent Projects</h2>
+            <FaCaretDown className='project-header-left-icon' size={24} />
+          </div>
           <div className="project-header-right">
-            <p className="project-header-right-icon">icon</p>
-            <button className="project-header-right-button">All time</button>
-            <button className="project-header-right-button">Monthly</button>
-            <button className="project-header-right-button">Weekly</button>
+            <CiSearch className="project-header-right-icon" size={24} />
+            <button className="project-header-right-button button-purple">
+              All time
+            </button>
+            <button className="project-header-right-button button-orange">
+              Monthly
+            </button>
+            <button className="project-header-right-button button-orange">
+              Weekly
+            </button>
           </div>
         </div>
         <table className="project-table">

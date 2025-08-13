@@ -4,26 +4,57 @@
 
 /* ===== Header ===== */
 .project-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-header-left-icon {
+    fill: white;
 }
 
 .project-header-text-title {
+  color: white;
+  font-size: 24px;
 }
 
 .project-header-right {
-    display: flex;
-    gap:5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .project-header-right-icon {
+  fill: white;
 }
 
 .project-header-right-button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.button-purple {
+  background-color: #504773;
+  color: #faefd4;
+}
+
+.button-orange {
+  background-color: #fc8625;
+  color: #faefd4;
 }
 
 /* ===== Table ===== */
 .project-table {
+    width: 100%;
 }
 
 .project-thead {
@@ -33,13 +64,19 @@
 }
 
 .project-th {
+        color: rgba(255, 255, 255, 0.6);
+
 }
 
 .project-tbody {
+    
 }
 
 .project-tbody-tr {
+    
 }
 
 .project-td {
+    color: rgba(255, 255, 255, 0.6);
+
 }

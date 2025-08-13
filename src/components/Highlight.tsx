@@ -121,7 +121,7 @@ const Highlight = () => {
                     <div className="highlight-mid-card-footer-container-right">
                       <MdDelete
                         className="highlight-mid-card-footer-iconDelete"
-                        size={32}
+                        size={24}
                       />
                       <p className="highlight-mid-card-footer-startDate">
                         Start {data.startDay} Nov

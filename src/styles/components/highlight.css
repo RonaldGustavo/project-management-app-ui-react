@@ -203,6 +203,7 @@
   justify-content: space-between;
   align-items: center;
   flex: 0 0 auto;
+  margin-bottom: 5px;
 }
 
 .highlight-right-card-header-text-title {
