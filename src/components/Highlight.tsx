@@ -21,7 +21,7 @@ const Highlight = () => {
     {
       title: "Development Application Android",
       subTitle: "Slack - Engineer",
-      percentage: "80",
+      percentage: 80,
       dayLeft: "5",
       iconProfile: "iconp",
       startDay: "14",
@@ -29,7 +29,7 @@ const Highlight = () => {
     {
       title: "Development Application Ios",
       subTitle: "Slack - Product",
-      percentage: "50",
+      percentage: 50,
       dayLeft: "2",
       iconProfile: "iconp",
       startDay: "20",
@@ -108,7 +108,7 @@ const Highlight = () => {
                   </div>
                   <div className="highlight-mid-card-bar-percentage">
                     <div
-                      className="bar-fill"
+                      className={`${data.percentage > 50 ? 'bar-fill-green' : 'bar-fill-orange'}`}
                       style={{ width: `${data.percentage}%` }}
                     ></div>
                   </div>

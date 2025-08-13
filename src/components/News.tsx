@@ -5,7 +5,7 @@ const News = () => {
         <>
         <div className="news">
             <p className="news-title">Highlight Important Things</p>
-            <p className="news-desc">Let’s write code with attention to detail, ensuring better application performance, a clean and maintainable architecture, and readability that makes collaboration effortless.</p>
+            <p className="news-desc">Let’s write code with attention to detail, ensuring better application performance, a clean and maintainable architecture.</p>
             <img className="news-image" src={newsImg}/>
             <div className="news-footer">
                 <p className="news-footer-page">02 of 04</p>

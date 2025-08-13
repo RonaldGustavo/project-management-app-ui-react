@@ -17,11 +17,11 @@ const Channel = () => {
     },
     {
       title: "team testing",
-      notif: "0",
+      notif: "",
     },
     {
       title: "team technical",
-      notif: "0",
+      notif: "5",
     },
   ];
 
@@ -48,7 +48,7 @@ const Channel = () => {
                 <MdGroup className="channel-body-card-icon" size={32} />
                 <p className="channel-body-card-title">{data.title}</p>
               </div>
-              <p className="channel-body-card-notif">{data.notif}</p>
+              {data.notif && <p className="channel-body-card-notif">{data.notif}</p>}
             </div>
           ))}
         </div>

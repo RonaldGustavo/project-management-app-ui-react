@@ -73,7 +73,7 @@
 .channel-body-card-title-container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
 }
 
 .channel-body-card-icon {
@@ -86,9 +86,15 @@
 }
 
 .channel-body-card-notif {
-  color: orange;
+  background-color: orange;
+  color: black; 
   font-weight: 600;
   font-size: 0.85rem;
+  padding: 4px 8px; 
+  border-radius: 8px; 
+  display: inline-block;
+  min-width: 30px; 
+  text-align: center; 
 }
 
 /* Responsif mobile */

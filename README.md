@@ -1,69 +1,19 @@
-# React + TypeScript + Vite
+# 🌟 Welcome to Project Management App UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Management App – UI Slicing from Dribbble Design
+This repository contains the frontend implementation of a Project Management application UI, inspired by a Dribbble design reference.
+Built using React and vanilla CSS, the project focuses on clean, pixel-perfect UI slicing with responsive layouts, smooth interactions, and reusable components.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node.js** – JavaScript runtime environment for building scalable backend features  
+- **React** – JavaScript library for building dynamic and interactive user interfaces  
+- **Vanilla CSS** – Pure CSS styling for complete control over UI design without frameworks  
 
-## Expanding the ESLint configuration
+## ✨ UI Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Here is the UI of this Project Management App:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![View]()
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+reference design dribble: https://dribbble.com/shots/26379761-UI-UX-for-Project-Team-Management
