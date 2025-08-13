@@ -14,6 +14,6 @@ Built using React and vanilla CSS, the project focuses on clean, pixel-perfect U
 
 Here is the UI of this Project Management App:
 
-![View]()
+![View](https://github.com/RonaldGustavo/project-management-app-ui-react/blob/master/src/assets/images/ui.png)
 
 reference design dribble: https://dribbble.com/shots/26379761-UI-UX-for-Project-Team-Management
