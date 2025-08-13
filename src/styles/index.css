@@ -15,7 +15,6 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(to bottom, #000000, #2e003e);
-  /* background-color: white; */
 }
 
 .container-wrapper {
@@ -26,5 +25,5 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 7px;
 }

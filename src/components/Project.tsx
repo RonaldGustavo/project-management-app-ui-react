@@ -6,30 +6,18 @@ const Project = () => {
     {
       name: 'Salesman',
       assign: 'Ronald',
-      date: '10 nov 2024',
+      date: '10 nov',
+      year: '2024',
       updates: '1 hour ago',
       status: 'Completed',
     },
     {
       name: 'Toko',
       assign: 'GusRon',
-      date: '20 jul 2024',
+      date: '20 jul',
+      year: '2024',
       updates: '9 day ago',
       status: 'In Progess',
-    },
-    {
-      name: 'Ngapp',
-      assign: 'RonGus',
-      date: '28 jun 2024',
-      updates: '30 min ago',
-      status: 'In Progess',
-    },
-    {
-      name: 'Manager',
-      assign: 'Gustavo',
-      date: '02 jun 2024',
-      updates: 'Yesterday',
-      status: 'Completed',
     },
   ];
 
@@ -37,19 +25,19 @@ const Project = () => {
     <>
       <div className="project">
         <div className="project-header">
-          <div className='project-header-left'>
+          <div className="project-header-left">
             <h2 className="project-header-text-title">Recent Projects</h2>
-            <FaCaretDown className='project-header-left-icon' size={24} />
+            <FaCaretDown className="project-header-left-icon" size={24} />
           </div>
           <div className="project-header-right">
             <CiSearch className="project-header-right-icon" size={24} />
             <button className="project-header-right-button button-purple">
               All time
             </button>
-            <button className="project-header-right-button button-orange">
+            <button className="project-header-right-button button-blue">
               Monthly
             </button>
-            <button className="project-header-right-button button-orange">
+            <button className="project-header-right-button button-blue">
               Weekly
             </button>
           </div>
@@ -69,11 +57,21 @@ const Project = () => {
               data.map((data: any) => {
                 return (
                   <tr className="project-tbody-tr">
-                    <td className="project-td">{data.name}</td>
-                    <td className="project-td">{data.assign}</td>
-                    <td className="project-td">{data.date}</td>
-                    <td className="project-td">{data.updates}</td>
-                    <td className="project-td">{data.status}</td>
+                    <td className="project-td text-white">{data.name}</td>
+                    <td className="project-td text-white">{data.assign}</td>
+                    <td className="project-td text-white">{data.date} <span className='text-gray'>{data.year}</span></td>
+                    <td className="project-td text-white">{data.updates}</td>
+                    <td className="project-td ">
+                      <button
+                        className={`project-table-status-button ${
+                          data.status === 'Completed'
+                            ? 'button-green'
+                            : 'button-orange'
+                        }`}
+                      >
+                        {data.status}
+                      </button>
+                    </td>
                   </tr>
                 );
               })}

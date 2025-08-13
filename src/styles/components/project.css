@@ -1,5 +1,15 @@
 /* ===== Container Utama ===== */
 .project {
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #1e1f25;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
 }
 
 /* ===== Header ===== */
@@ -16,7 +26,7 @@
 }
 
 .project-header-left-icon {
-    fill: white;
+  fill: white;
 }
 
 .project-header-text-title {
@@ -47,6 +57,16 @@
   color: #faefd4;
 }
 
+.button-blue {
+  background-color: rgb(114, 114, 213);
+  color: #faefd4;
+}
+
+.button-green {
+  background-color: green;
+  color: #faefd4;
+}
+
 .button-orange {
   background-color: #fc8625;
   color: #faefd4;
@@ -54,7 +74,10 @@
 
 /* ===== Table ===== */
 .project-table {
-    width: 100%;
+  width: 100%;
+  border-collapse: collapse; /* gabungkan border antar sel */
+  border-spacing: 0;
+  border: none;
 }
 
 .project-thead {
@@ -64,19 +87,49 @@
 }
 
 .project-th {
-        color: rgba(255, 255, 255, 0.6);
-
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  height: 70px;
+  font-size: 18px;
 }
 
 .project-tbody {
-    
 }
 
 .project-tbody-tr {
-    
 }
 
 .project-td {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  height: 50px;
+}
 
+.project-tbody tr:nth-child(even) {
+  background-color: #1e1f25;
+}
+
+.project-tbody tr:nth-child(odd) {
+  background-color: #000000;
+}
+
+.project-table-status-button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.text-white {
+  color: white;
+}
+.text-gray {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.7;
+}
+
+th,
+td {
+  border: none; /* hilangkan border di setiap sel */
 }
